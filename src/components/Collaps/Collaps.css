@@ -1,0 +1,84 @@
+.collaps {
+  margin: 32px 64px;
+}
+
+.collapsArticle {
+  max-width: 1024px;
+  margin: 32px auto;
+}
+
+.isClose {
+  display: none;
+}
+
+.collapsVisible {
+  background-color: #ff6060;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  width: 1024px;
+}
+
+.collapsVisible h3 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+  padding: 11px 16px;
+}
+
+.collapsVisible > .fa-chevron-down,
+.collapsVisible > .fa-chevron-up {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+}
+
+.collapsContent {
+  background: #f7f7f7;
+  border-radius: 5px;
+  height: 100%;
+  max-width: 1024px;
+}
+
+.collapsContent p {
+  color: #ff6060;
+  font-size: 24px;
+  margin: 0;
+  padding: 16px;
+}
+
+@media screen and (max-width: 650px) {
+  .collapsArticle {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .collapsVisible {
+    height: 29px;
+    width: 100%;
+  }
+
+  .collapsVisible h3 {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .collapsVisible > .fa-chevron-down,
+  .collapsVisible > .fa-chevron-up {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .collapsContent {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .collapsContent p {
+    font-size: 13px;
+  }
+}
