@@ -4,7 +4,8 @@ import "./App.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HomePage from "../../pages/HomePage/HomePage";
-//import AboutPage from "../../pages/AboutPage/AboutPage";
+import AboutPage from "../../pages/AboutPage/AboutPage";
+import ApartmentPage from "../../pages/ApartmentPage/ApartmentPage";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
 class App extends Component {
@@ -13,9 +14,13 @@ class App extends Component {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<HomePage />}>
-            <Route path="*" element={<ErrorPage />} />
-          </Route>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route
+            path="/apartment/:id"
+            render={(props) => <ApartmentPage {...props} />}
+          />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />
       </div>
