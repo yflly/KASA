@@ -14,7 +14,7 @@ class Nav extends Component {
           <Link to="/" className="linkHomePage">
             Accueil
           </Link>
-          <Link to="/About" className="linkAboutPage">
+          <Link to="/about" className="linkAboutPage">
             A propos
           </Link>
         </nav>
