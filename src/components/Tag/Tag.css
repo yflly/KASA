@@ -1,0 +1,24 @@
+.apartmentTag {
+  display: inline-block;
+  height: max-content;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: #ff6060;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 0.25rem 1rem 0.25rem 0;
+  padding: 0.25rem 2rem;
+}
+.containerTags {
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+}
+@media screen and (min-width: 768px) {
+  .apartmentTag {
+    font-size: 0.625rem;
+    font-weight: 500;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    padding: 0.25rem 1rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import "./Tag.css";
 
-class Tags extends Component {
+class Tag extends Component {
   render() {
     return (
       <div className="containerTags">
@@ -10,4 +11,4 @@ class Tags extends Component {
   }
 }
 
-export default Tags;
+export default Tag;
