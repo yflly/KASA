@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
+//import { data } from "../../datas/data";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HomePage from "../../pages/HomePage/HomePage";
@@ -13,10 +14,33 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route
+            path="/apartment/:id"
+            render={(props) => <ApartmentPage {...props} />}
+          />
+          <Route path="*" component={ErrorPage} />
+        </Switch>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/*class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route
+            exact
             path="/apartment/:id"
             render={(props) => <ApartmentPage {...props} />}
           />
@@ -26,32 +50,6 @@ class App extends Component {
       </div>
     );
   }
-}
-
-export default App;
-
-//import logo from './logo.svg';
-//import './App.css';
-
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
 }
 
 export default App;*/
