@@ -3,6 +3,11 @@
   margin-bottom: 32px;
 }
 
+.card {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 .card h2 {
   position: absolute;
   bottom: 24px;
@@ -13,14 +18,6 @@
   line-height: 25, 67px;
   font-size: 18px;
   font-weight: 500;
-}
-
-.card img {
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 32px;
 }
 
 .cardDiv {
@@ -50,4 +47,27 @@
   background: #f6f6f6;
   border-radius: 25px;
   margin: 32px 64px;
+}
+
+@media screen and (max-width: 650px) {
+  .card h2 {
+    width: 80%;
+    line-height: 1.5rem;
+  }
+
+  .card img,
+  .cardDiv {
+    width: 100%;
+    height: 256px;
+  }
+
+  .apartmentCard {
+    background-color: #fff;
+    margin: 32px;
+    padding: 0;
+  }
+
+  .card {
+    padding: 0;
+  }
 }
