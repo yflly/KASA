@@ -6,10 +6,16 @@
   cursor: pointer;
   font-size: 1.5rem;
 }
+
+.linkAboutPage {
+  padding-right: 32px;
+}
+
 .linkHomePage:focus,
 .linkAboutPage:focus {
   text-decoration-line: underline;
 }
+
 header {
   width: 100%;
   height: 6rem;
@@ -22,6 +28,10 @@ header {
   height: 3rem;
   padding: 4rem;
 }
+
+.navbarHeader {
+  margin: 0;
+}
 @media screen and (max-width: 650px) {
   .linkAboutPage {
     padding-right: 2rem;
@@ -32,8 +42,10 @@ header {
   }
   .linkHomePage,
   .linkAboutPage {
-    font-size: 0.75rem;
+    font-size: 12px;
+    font-weight: 500;
     margin: 0;
+    text-transform: uppercase;
   }
   .logo {
     padding: 2rem;
