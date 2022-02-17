@@ -1,6 +1,6 @@
 .homeBanner {
   position: relative;
-  margin: 6px;
+  margin: 64px;
 }
 
 .homeBannerImg {
@@ -45,9 +45,11 @@
     border-radius: 10px;
   }
 
-  .heroText {
-    font-size: 1.5rem;
+  .homeBannerText {
+    font-size: 24px;
+    font-weight: 500;
     line-height: 100%;
     text-align: start;
+    top: 50%;
   }
 }

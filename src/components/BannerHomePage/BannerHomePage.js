@@ -6,12 +6,13 @@ class BannerHomePage extends Component {
   render() {
     return (
       <div className="homeBanner">
+        <div className="homeBannerWrapper"></div>
         <img
           src={HomeBannerImg}
           alt="paysage forêt"
           className="homeBannerImg"
         />
-        <div className="homeBannerWrapper"></div>
+
         <h2 className="homeBannerText">Chez vous, partout et ailleurs</h2>
       </div>
     );
