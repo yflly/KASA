@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
-
 import { data } from "../../datas/data";
+import "./ApartmentPage.css";
 
-import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
 import Gallery from "../../components/Gallery/Gallery";
 import Tag from "../../components/Tag/Tag";
 import Collaps from "../../components/Collaps/Collaps";
 import Rating from "../../components/Rating/Rating";
-import Location from "../../components/Location/Location";
 
 class ApartmentPage extends Component {
   render() {
@@ -46,7 +44,7 @@ class ApartmentPage extends Component {
               <Rating fill={rating} />
             </div>
           </section>
-          <section className="location-details">
+          <section className="apartment-details">
             <Collaps title="Description" content={description} />
             <Collaps title="Equipements" content={equipments} />
           </section>

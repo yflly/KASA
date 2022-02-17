@@ -1,17 +1,22 @@
 .apartment-header h2 {
   color: #ff6060;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 18px;
+  margin: 0;
+}
+
+.apartment-page {
+  margin: 0 32px 0 32px;
 }
 
 .apartment-header p {
   color: #ff6060;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 18px;
   margin-top: 5px;
 }
 
-.apartment-header .tag {
+.apartment-header .apartmentTags {
   margin: 10px 10px 10px 0;
 }
 
@@ -29,6 +34,10 @@
   flex-wrap: wrap;
 }
 
+.apartment-details .dropdown {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .apartment-header {
     display: flex;
@@ -37,6 +46,13 @@
     margin-bottom: 25px;
   }
 
+  /*.apartment-header h2 {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 5px;
+  }*/
+
   .apartment-header-host {
     flex-direction: column;
     margin: 0;
@@ -44,5 +60,9 @@
 
   .apartment-details .dropdown {
     width: 47%;
+  }
+
+  .apartment-page {
+    margin: 0 64px 0 64px;
   }
 }
