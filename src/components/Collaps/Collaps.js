@@ -1,61 +1,52 @@
 import React, { Component } from "react";
 import "./Collaps.css";
+import PropTypes from "prop-types";
 
 class Collaps extends Component {
   state = {
-    show: false,
-    className: "isClose",
-    direction: "up",
+    isOpen: false,
   };
 
-  showContent = () => {
-    this.setState({
-      show: !this.state.show,
-      direction: "down",
-    });
-    this.state.show
-      ? this.setState({ className: "isClose" })
-      : this.setState({ className: "isOpen" });
-  };
-
-  getCollapsVisible = () => {
-    return (
-      <div
-        className={`collapsVisible ${this.state.className}`}
-        onClick={this.showContent}
-      >
-        <h3>{this.props.title}</h3>
-        <i className={`fas fa-chevron-${this.state.direction}`}></i>
-      </div>
-    );
-  };
-
-  getCollapsContent = () => {
-    if (Array.isArray(this.props.content)) {
-      return (
-        <div className={`collapsContent ${this.state.className}`}>
-          {this.props.content.map((item, index) => (
-            <p key={`item-${index}`}>{item}</p>
-          ))}
-        </div>
-      );
-    }
-
-    return (
-      <div className={`collapsContent ${this.state.className}`}>
-        <p>{this.props.content}</p>
-      </div>
-    );
+  toggleList = () => {
+    this.setState((prevState) => ({
+      isOpen: prevState.isOpen ? false : true,
+    }));
   };
 
   render() {
+    const { title, content } = this.props;
+    const { isOpen } = this.state;
+
     return (
-      <article className="collapsArticle">
-        {this.getCollapsVisible()}
-        {this.getCollapsContent()}
-      </article>
+      <div className="dropdown">
+        <h3 onClick={() => this.toggleList()}>
+          {title}
+          <span
+            className={isOpen ? "fas fa-chevron-up" : "fas fa-chevron-down"}
+          ></span>
+        </h3>
+
+        {Array.isArray(content) ? (
+          <ul
+            className={`dropdown-list ${isOpen ? "drop-open" : "drop-close"}`}
+          >
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className={`dropdown-list ${isOpen ? "drop-open" : "drop-close"}`}>
+            {content}
+          </p>
+        )}
+      </div>
     );
   }
 }
+
+Collaps.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.oneOfType([PropTypes.array, PropTypes.string]).isRequired,
+};
 
 export default Collaps;

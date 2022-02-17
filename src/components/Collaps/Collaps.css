@@ -1,84 +1,69 @@
-.collaps {
-  margin: 32px 64px;
+.dropdown {
+  height: 100%;
+  min-width: 300px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.collapsArticle {
-  max-width: 1024px;
-  margin: 32px auto;
+.dropdown h3 {
+  height: 30px;
+  border-radius: 5px;
+  background: #ff6060;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
 }
 
-.isClose {
+.dropdown span {
+  font-size: 1.2rem;
+}
+
+.dropdown-list {
+  background: #f7f7f7;
+
+  padding: 25px 12px;
+  border-radius: 0 0 5px 5px;
+  color: #ff6060;
+  font-size: 0.9rem;
+}
+.dropdown ul {
+  list-style-type: none;
+}
+
+.dropdown li {
+  margin-bottom: 6px;
+}
+
+.dropdown-list.drop-close {
   display: none;
 }
 
-.collapsVisible {
-  background-color: #ff6060;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  height: 48px;
-  width: 1024px;
+.dropdown-list.drop-open {
+  display: open;
 }
 
-.collapsVisible h3 {
-  color: #fff;
-  font-size: 24px;
-  margin: 0;
-  padding: 11px 16px;
-}
-
-.collapsVisible > .fa-chevron-down,
-.collapsVisible > .fa-chevron-up {
-  color: white;
-  cursor: pointer;
-  font-size: 24px;
-  padding: 8px;
-}
-
-.collapsContent {
-  background: #f7f7f7;
-  border-radius: 5px;
-  height: 100%;
-  max-width: 1024px;
-}
-
-.collapsContent p {
-  color: #ff6060;
-  font-size: 24px;
-  margin: 0;
-  padding: 16px;
-}
-
-@media screen and (max-width: 650px) {
-  .collapsArticle {
-    margin-left: 16px;
-    margin-right: 16px;
+@media screen and (min-width: 768px) {
+  .dropdown {
+    border-radius: 10px;
   }
 
-  .collapsVisible {
-    height: 29px;
-    width: 100%;
+  .dropdown h3 {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 0 20px;
   }
 
-  .collapsVisible h3 {
-    font-size: 0.8rem;
-    padding: 8px 16px;
-  }
+  .dropdown-list {
+    padding: 30px 20px;
 
-  .collapsVisible > .fa-chevron-down,
-  .collapsVisible > .fa-chevron-up {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-
-  .collapsContent {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 32px;
-  }
-
-  .collapsContent p {
-    font-size: 13px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1.2rem;
   }
 }
