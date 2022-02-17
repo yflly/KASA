@@ -1,0 +1,11 @@
+.aboutCollaps {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutCollaps {
+    padding-left: 128px;
+    padding-right: 128px;
+  }
+}
