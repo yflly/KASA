@@ -3,11 +3,7 @@ import "./Tag.css";
 
 class Tag extends Component {
   render() {
-    return (
-      <div className="containerTags">
-        <div className="apartmentTags">{this.props.tag}</div>
-      </div>
-    );
+    return <div className="apartmentTags">{this.props.content}</div>;
   }
 }
 
