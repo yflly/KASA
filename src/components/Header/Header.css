@@ -18,15 +18,15 @@
 
 header {
   width: 100%;
-  height: 6rem;
+  height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
   width: auto;
-  height: 3rem;
-  padding: 4rem;
+  height: 32px;
+  padding: 64px;
 }
 
 .navbarHeader {
@@ -34,11 +34,11 @@ header {
 }
 @media screen and (max-width: 650px) {
   .linkAboutPage {
-    padding-right: 2rem;
+    padding-right: 32px;
   }
 
   .linkHomePage {
-    padding-right: 1rem;
+    padding-right: 16px;
   }
   .linkHomePage,
   .linkAboutPage {
@@ -48,7 +48,7 @@ header {
     text-transform: uppercase;
   }
   .logo {
-    padding: 2rem;
+    padding: 32px;
     max-width: 150px;
   }
 }
