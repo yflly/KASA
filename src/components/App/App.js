@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.css";
-//import { data } from "../../datas/data";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import HomePage from "../../pages/HomePage/HomePage";
@@ -30,26 +29,3 @@ class App extends Component {
 }
 
 export default App;
-
-/*class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route
-            exact
-            path="/apartment/:id"
-            render={(props) => <ApartmentPage {...props} />}
-          />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
-      </div>
-    );
-  }
-}
-
-export default App;*/
