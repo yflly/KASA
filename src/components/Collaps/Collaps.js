@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Collaps.css";
-import PropTypes from "prop-types";
 
 class Collaps extends Component {
   state = {
@@ -43,10 +42,5 @@ class Collaps extends Component {
     );
   }
 }
-
-Collaps.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.oneOfType([PropTypes.array, PropTypes.string]).isRequired,
-};
 
 export default Collaps;
