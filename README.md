@@ -1,9 +1,15 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
 # Sportsee
-## Available Scripts
 
-In the project directory, you can run:
+## Dependencies
+
+- [Node.js (v14.17.1)](https://nodejs.org/en/)
+- [React](https://reactjs.org/) v17.0.2
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) v5.2.0
+- [recharts](https://recharts.org/en-US/) v2.1.9
+- [prop-types](https://www.npmjs.com/package/prop-types) v15.8.1
+
 
 ### `npm start`
 
