@@ -2,9 +2,9 @@
 
 # Sportsee
 
-- SportSee, a startup dedicated to sports coaching. 
-- In full growth, the company will today launch a new version of the user profile page. 
-- This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
+ SportSee, a startup dedicated to sports coaching. 
+ In full growth, the company will today launch a new version of the user profile page. 
+ This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
 
 ## Dependencies
 
@@ -32,6 +32,7 @@
 ## Back-end
 
 1. This project uses a micro API available with instructions [here](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
+
 2. There are 2 endpoints availables:
   - `http://localhost:3001/user/12`
   - `http://localhost:3001/user/18`
