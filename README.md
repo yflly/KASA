@@ -28,4 +28,11 @@
    ```sh
    npm start
    ```
+   
+## Back-end
+
+1. This project uses a micro API available with instructions [here](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
+2. There are 2 endpoints availables:
+  - `http://localhost:3001/user/12`
+  - `http://localhost:3001/user/18`
 
