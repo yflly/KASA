@@ -2,9 +2,7 @@
 
 # Sportsee
 
-SportSee, une startup dédiée au coaching sportif. 
-En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. 
-Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+SportSee, a startup dedicated to sports coaching. In full growth, the company will today launch a new version of the user profile page. This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
 
 ## Dependencies
 
