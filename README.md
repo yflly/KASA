@@ -2,6 +2,10 @@
 
 # Sportsee
 
+SportSee, une startup dédiée au coaching sportif. 
+En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. 
+Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+
 ## Dependencies
 
 - [Node.js (v14.17.1)](https://nodejs.org/en/)
