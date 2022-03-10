@@ -2,7 +2,9 @@
 
 # Sportsee
 
-SportSee, a startup dedicated to sports coaching. In full growth, the company will today launch a new version of the user profile page. This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
+- SportSee, a startup dedicated to sports coaching. 
+- In full growth, the company will today launch a new version of the user profile page. 
+- This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
 
 ## Dependencies
 
@@ -26,3 +28,4 @@ SportSee, a startup dedicated to sports coaching. In full growth, the company wi
    ```sh
    npm start
    ```
+
