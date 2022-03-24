@@ -1,18 +1,16 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
-# Sportsee
+# KASA
 
- SportSee, a startup dedicated to sports coaching. 
- In full growth, the company will today launch a new version of the user profile page. 
- This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
+ Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour Kasa fait partie des leaders de la location d’appartements entre particuliers en France.
+
+L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio de freelance !
 
 ## Dependencies
 
 - [Node.js (v14.17.1)](https://nodejs.org/en/)
 - [React](https://reactjs.org/) v17.0.2
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) v5.2.0
-- [recharts](https://recharts.org/en-US/) v2.1.9
-- [prop-types](https://www.npmjs.com/package/prop-types) v15.8.1
 
 ## Installation
 
@@ -29,11 +27,4 @@
    npm start
    ```
    
-## Back-end
-
-1. This project uses a micro API available with instructions [here](https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard).
-
-2. There are 2 endpoints availables:
-  - `http://localhost:3001/user/12`
-  - `http://localhost:3001/user/18`
 
